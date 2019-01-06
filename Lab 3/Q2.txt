@@ -1,0 +1,6 @@
+1. MPI_COMM_WORLD means "all the processes in the MPI application". It is called a communicator and it provides all necessary to do message passing.
+
+2. Determines the rank of the calling process in the communicator.
+
+3. Parallel computers are systems consist multiple processors. Parallel programming allows programs to be executed concurrently across multiple processors.
+
