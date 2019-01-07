@@ -24,7 +24,7 @@ int main(int argc, char* argv[]){
 	MPI_Bcast(&intervals, 1, MPI_INT, 0, MPI_COMM_WORLD);
 	if(my_rank != 0){
 		step = 1.0/(double) intervals;
-		for(i=my_rank; i<=intervals; i+=(p-1)){ 
+		for(i=my_rank-1; i<=intervals; i+=(p-1)){ 
 			x = (i+0.5)*step;
 			sum += 4.0/(1.0+x*x);
 		}
